@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <link rel="icon" href="/img/logo.ico">
+    <title>Encriptador</title>
+ </head>
+ <body>
+         <nav class="m-1">
+            <img src="img/Vector.png" alt="Logo">
+            <div class="titulo">Encriptador</div>
+         </nav>
+
+         <section>
+          <div class="row">
+               <div class=" col-sm-1 col-7 m-3">
+                     <textarea name="text" id="text"  cols="30" rows="10" class="text-area" placeholder="Escriba aquí para encriptar" autofocus></textarea>
+
+                     <p class="m-1" id="error">
+                        <img src="img/Vector (2).png" alt="icono"> Puede usar Letras y Números</p>
+
+                     <div class="row m-1">
+                        <div class="col-5 col-sm-2 m-1 ">
+                           <button class="btn btn-primary p-1" onclick="encriptar()">Encriptar</button>
+                        </div>
+                        <div class="col-5 col-sm-2 m-1">
+                           <button class="btn btn-info p-1" onclick="desencriptar()">Desencriptar</button>
+                        </div>
+                     </div>
+               </div>
+             
+                  <div class=" col-sm-2 col-4 m-1 card card2">
+
+                     <img src="img/1.png" alt="Imagen del muñeco" class="image imagen"  id="imagen">
+
+                     <section class="row left m-4" id="resultado">
+                        <h1 class="center">Ningún texto fue encontrado</h1>
+                        <p class="center">Ingrese el texto que desea encriptar o desencriptar</p>
+                     </section>
+
+                     <div class="col-12">
+                        <button class="btn-copy p-1 copiar" id="copiar" hidden>Copiar</button>
+                     </div>
+                  </div>
+            </div>
+         </section>
+         
+          <!-- archivos javascript -->
+         <script src="functions.js"></script>
+
+         <footer class="copyright">
+            <p>⭐&copy Copyright. Hecho con &#x1F497 por Domingo Feliz ⭐</p>
+         </footer>
+         
+ </body>
+ </html>
+
